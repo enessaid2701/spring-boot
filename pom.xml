@@ -43,12 +43,11 @@
 			</plugin>
 
             <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <systemPropertyVariables>
-                        <java.runtime.version>11</java.runtime.version>
-                    </systemPropertyVariables>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
 		</plugins>
